@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: url("img.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+}
+
+.contact-title{
+    margin-top: 100px;
+    color: #09204b;
+    text-transform: uppercase;
+    transition: all 2s ease-in-out;
+}
+.contact-title h1{
+    font-size: 50px;
+    line-height: 10px;
+    list-style: 10px;
+}
+.contact-title h2{
+    font-size: 25px;
+}
+
+form{
+    margin: 70px;
+    transition: all 2s ease-in-out;
+}
+ 
+.form-control{
+    width: 600px;
+    background: transparent;
+    border: 1px solid #09204b;
+    outline: none;
+    border-bottom: 1px solid #09204b;
+    border-radius: 6px;
+    color: #045e6e;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+input{
+    height: 45px;
+}
+
+form .submit{
+    background: #cca093;
+    border-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 3px;
+    height: 45px;
+    margin-top: 15px;
+    border-radius: 6px;
+}
+
+form .submit:hover{
+    background-color: #945652;
+    cursor: pointer;
+    border-radius: 7px;
+}

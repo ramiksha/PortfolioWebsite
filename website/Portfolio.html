@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <link href="Portfolio.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?...">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</style>
+
+</head>
+<body>
+       
+<div class="background">
+<div class="nav">
+            <a class="a active" href="indx.html">Home</a>
+            <a class="b" href="#">About Me</a>
+            <a class="c" href="#">Gallery</a>
+            <a class="d" href="Contact.html">Contact</a>
+</div>
+
+<div class="content">
+    <div class="home">
+        <h1>I am Ramiksha Gharti kshetri</h1>
+        <h3>Web Designer</h3>
+
+    </div>
+        
+    <div class="aboutme">
+        <p><b>Hello,</b> <br>
+    Welcome to my page.<br>
+    I am Ramiksha Gharti Kshetri. I am ninteen years old student and I live in Baniyataar-9, Samakhusi. I completed my secondary education from Amrit Adarsha Boarding School which is located in Mallaj village of Parbat.
+    I completed my +2 from NIST(National School of Sciences). Recently I am studying in Herald College. Talking about my hobbies I prefer watching south indian movies and motivational stories. 
+    I love travelling and exploring new places. I enjoy listening music, dancing and reading nobels. my favourite colour is yellow so I buy yellowish and colourful clothes.
+     I was born in a chhetri family. I love chhetri culture more because of its religion. 
+</p>
+    </div>
+
+    <div class="gallery">
+        <h1>Gallery</h1>
+        <div class="image">
+            <img src="newa.JPG">
+        </div>
+        <div class="image">
+            <img src="pas.JPG" >
+        </div>
+        <div class="image">
+            <img src="sazni.JPG" width="230" height="180">
+        </div>
+        <div class="image">
+            <img src="her.JPG">
+        </div>
+        <div class="image">
+            <img src="bhaktapur.JPG">
+        </div>
+
+        <div class="image">
+                <img src="rami.JPG" width="200" height="160">
+        </div>
+
+    </div>
+
+</div>
+	
+
+<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('a').click(function(){
+       //alert("i am click");
+       var selected = $(this);
+       $('a').removeClass('active');
+       $(selected).addClass('active');
+    });
+    var $a = $('.a'),
+    $b = $('.b'),
+    $c = $('.c'),
+    $d = $('.d'),
+    $home = $('.home'),
+    $aboutme = $('.aboutme'),
+    $gallery = $('.gallery'),
+    $contact = $('.contact');
+
+    $a.click(function(){
+        $home.fadeIn();
+        $aboutme.fadeOut();
+        $gallery.fadeOut();
+        $contact.fadeOut();
+    });
+    $b.click(function(){
+        $aboutme.fadeIn();
+        $home.fadeOut();
+        $gallery.fadeOut();
+        $contact.fadeOut();
+    });
+    
+    $c.click(function(){
+        $gallery.fadeIn();
+        $aboutme.fadeOut();
+        $contact.fadeOut();
+        $home.fadeOut();
+    });
+    $d.click(function(){
+        $contact.fadeIn();
+        $aboutme.fadeOut();
+        $gallery.fadeOut();
+        $home.fadeOut();
+    });
+
+
+});
+
+</script>
+ </div>
+ 
+ <h4>Social media</h4>
+        <a href="https://www.facebook.com/ramiksha.gc.5"><img src="facebook.PNG" weight="100" height="50"></a>
+        
+        <a href="https://www.instagram.com/ramiksha_gc"><img src="instagram.PNG" weight="100" height="50"></a>
+    </body>
+        </html>         
+        
